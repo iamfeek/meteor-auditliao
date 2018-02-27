@@ -4,18 +4,15 @@ AuditLogSchema = new SimpleSchema({
     type: SimpleSchema.RegEx.Id,
     label: "user performing action",
     optional: true,
-    index: true
   },
   docId: {
     type: SimpleSchema.RegEx.Id,
     label: "Document Id",
     optional: true,
-    index: true
   },
   action: {
     type: String,
     label: "logged action",
-    index: true
   },
   result: {
     type: [Object],
@@ -51,7 +48,6 @@ AuditLogSchema = new SimpleSchema({
   collection: {
     type: String,
     label: "Collection",
-    index: true
   },
   timestamp: {
     type: Date,

@@ -1,8 +1,8 @@
 Package.describe({
-  name: "zeroasterisk:auditlog",
-  version: "0.0.3",
+  name: "iamfeek:auditliao",
+  version: "0.0.4",
   summary: "Simple, generic, extensible audit logging on collection insert, update, upsert, remove",
-  git: "https://github.com/zeroasterisk/meteor-auditlog",
+  git: "https://github.com/iamfeek/meteor-auditliao",
   documentation: "README.md"
 });
 
@@ -28,6 +28,6 @@ Package.onTest(function(api) {
   api.use(["meteor", "mongo", "underscore", "check"], ["client", "server"]);
   api.use("ecmascript");
   api.use("tinytest");
-  api.use("zeroasterisk:auditlog");
+  api.use("iamfeek:auditliao");
   api.addFiles("auditlog-tests.js");
 });
